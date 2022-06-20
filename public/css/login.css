@@ -1,0 +1,62 @@
+div{
+	min-height: 100px;
+
+}
+#logo{
+	width: 120px !important;
+	min-height: 80px;
+}
+#form{
+	box-shadow: 8px 20px 15px lightgray;
+	border-radius: 5px;
+}
+#mailz,#pass{
+	height: 50px !important;
+}
+#btns{
+	height: 50px;
+}
+#signup2{
+	text-decoration: none;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #3CA034;
+}
+#signup1{
+margin-top: 10px;
+}
+#btns{
+	background-color: #3CA034;
+	color: white;
+}
+#forgot{
+	text-decoration: none;
+	color:#3CA034 ;
+	font-weight: bold;
+}
+#forgot:hover{
+	background-color: #B4E205;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: white;
+}
+#account{
+	margin-top: 20px;
+}
+#signin{
+	font-weight: bold;
+}
+
+
+
+@media(max-width: 320px){
+	#images{
+		display: none;
+	}
+	#form{
+		margin-top: -120px;
+	}
+	#logo{
+		width: 90px !important;
+	}
+}

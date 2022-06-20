@@ -1,0 +1,127 @@
+@font-face{
+	font-family: skimafonts;
+	src: url(Roboto-Black.ttf) format("ttf"),url(Roboto-Bold.ttf) format("ttf"),url(Roboto-Italic.ttf) format("ttf"),url(LibreFranklin-VariableFont_wght.ttf) format("ttf"),url(LibreFranklin-Italic-VariableFont_wght.ttf) format("ttf");
+}
+body{
+		font-family:skimafonts;
+}
+
+div{
+	min-height: 50px;
+}
+#nav{
+	height: 800px;
+}
+.menu{
+	margin: 5px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family:skimafonts;
+	font-size: 20px;
+
+}
+.menu:hover{
+	background-color: #3CA034;
+
+}
+.menu a{
+	color: white !important;
+}
+
+.menu a:hover{
+	background-color: #B4E205 !important;
+	border-radius: 5px;
+	color: white !important;
+}
+#navvy{
+border-color: green; 
+}
+#navbar{
+	background-color: #3CA034;
+}
+#balance{
+	font-size: 20px;
+	font-family:skimafonts;
+}
+#greeting{
+	font-size: 25px;
+	font-family:skimafonts;
+	text-align: right;
+	color: #3CA034;
+	padding-top: 10px;
+	margin-right: 20px !important;
+}
+#walletbalance{
+	font-size: 25px;
+	background-color: #3CA034!important;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 10px;
+	cursor: pointer;
+	font-family:skimafonts;
+}
+#chart{
+	border: 1px solid #3CA034;
+	border-radius: 10px;
+}
+#refer{
+	border: 1px solid #3CA034;
+	background-color: #3CA034;
+	border-radius: 10px;
+	color: white;
+	font-size: 30px;
+	padding-top: 20px;
+}
+#refergif{
+	font-size: 120px;
+	padding-top: 30px;
+}
+.activity{
+	border: 1px solid #3CA034;
+	border-bottom-right-radius: 10px;
+	cursor: pointer;
+}
+
+.profile{
+	border-bottom-right-radius: 10px;
+	cursor: pointer;
+}
+#banner{
+	display: none;
+}
+#profilename{
+	font-size: 20px;
+	padding-top: 10px;
+}
+//Sell Waste
+.block{
+	border: 1px solid black !important;
+}
+
+//Media Query
+
+@media screen and (max-width: 320px){
+		#nav{
+		height: 300px !important;
+	}
+	#greeting{
+		font-size: 5px;
+	}
+	#balance{
+		font-size: 15px;
+	}
+	#walletbalance{
+		font-size: 20px;
+	}
+	#chart{
+		margin-left: 10px;
+	}
+	#refer{
+		font-size: 20px;
+		margin-left: 10px;
+	}
+	.amount{
+		font-size: 15px;
+	}
+
+}
