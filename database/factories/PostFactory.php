@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Category;
+use App\Models\Author;
 
 class PostFactory extends Factory
 {
@@ -18,7 +19,8 @@ class PostFactory extends Factory
             'title' => $this->faker->realText(50),
             'excerpt' => $this->faker->sentence,
             'body' => $this->faker->paragraph(1, true),
-            'category_id' => Category::factory()
+            'category_id' => Category::factory(),
+            'author_id' => Author::factory()
         ];
     }
 }

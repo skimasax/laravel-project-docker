@@ -12,8 +12,10 @@ class PostController extends Controller
             return view('welcome')->with(['posts' => $posts]);
         }
 
+
         public function getPost(Request $req, $id){
             $data= Post::find($id);
-            return view('welcome')->with(['data' => $data]);
+            return view('posts')->with(['data' => $data]);
         }
+        
 }
