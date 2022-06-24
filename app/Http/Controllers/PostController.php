@@ -17,5 +17,12 @@ class PostController extends Controller
             $data= Post::find($id);
             return view('posts')->with(['data' => $data]);
         }
+
+        public function search(Request $req){
+            $searchinfo=$req->search;
+            $data=Post::where('title','LIKE', '%'.$searchinfo.'%')->get();
+            // dd($data);
+            return view('searchpost')->with(['data' => $data]);
+        }
         
 }
