@@ -16,13 +16,6 @@ agent any
             }
         }
 
-        stage('run migration'){
-            steps{
-                sh 'php artisan migrate --force'
-            }
-        }
-
-
         stage('clear cache'){
             steps{
                 sh 'php artisan config:clear'
