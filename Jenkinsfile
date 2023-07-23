@@ -16,11 +16,24 @@ agent any
             }
         }
 
-        stage('run test'){
+        stage('run migration'){
             steps{
-                sh 'php artisan test'
+                sh 'php artisan migrate'
             }
         }
+
+
+        stage('clear cache'){
+            steps{
+                sh 'php artisan config:clear'
+
+                sh 'php artisan optimize'
+
+                sh 'php artisan route:clear'
+            }
+        }
+
+
         
     }
 
