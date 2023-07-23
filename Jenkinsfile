@@ -18,7 +18,7 @@ agent any
 
         stage('run migration'){
             steps{
-                sh 'php artisan migrate'
+                sh 'php artisan migrate --force'
             }
         }
 
