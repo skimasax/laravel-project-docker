@@ -16,4 +16,6 @@ class HomeController extends Controller
 
             return back()->with("msg", "<div class='alert alert-success'>Subscribed Successfully</div>");
     }
+
+    //Helloooooooooo
 }
