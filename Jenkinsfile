@@ -26,6 +26,12 @@ agent any
             }
         }
 
+        stage('run test'){
+            steps{
+                sh 'php artisan test'
+            }
+        }
+
 
         
     }
