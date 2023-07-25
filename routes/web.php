@@ -15,8 +15,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/',[PostController::class, 'index'])->name('home');
-Route::get('/post/{id}',[PostController::class, 'getPost'])->name('posts');
-Route::get('/search',[PostController::class, 'search'])->name('search');
-Route::post('/subscribe',[HomeController::class, 'subscribe'])->name('subscribe');
+Route::get('/', function () {
+    return view('welcome');
+});
 
